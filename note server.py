@@ -6,7 +6,7 @@ class Save(Protocol):
         self.transport.write(saveText)
 
 
-def main():
+def ():
     f = Factory()
     f.protocol = Save
     reactor.listenTCP(1234, f)
