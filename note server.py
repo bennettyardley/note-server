@@ -1,5 +1,5 @@
 from twisted.internet.protocol import Protocol, Factory
-from .internet import reactor
+from twisted.internet import reactor
 
 class Save(Protocol):
     def receivedSaveText(self, saveText):
